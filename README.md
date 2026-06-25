@@ -21,5 +21,6 @@ A aplicação consome lotes de dados assíncronos (arquivos CSV), realiza a sani
 
 ## 📁 Estrutura do Arquivo de Entrada (lote_pedidos.csv)
 
-O robô está preparado para lidar com arquivos estruturados da seguinte forma, aplicando validações severas em campos vazios e valores monetários:
+O robô está preparado para lidar com arquivos estruturados da seguinte forma, aplicando validações severas em campos vazios e valores monetários.
 
+👨‍💻 Autor Desenvolvido por Mateus Castelani.
