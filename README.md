@@ -32,4 +32,4 @@ Rastreabilidade: Implementação de Logs via SLF4J para auditoria de robôs de f
 
 O robô está preparado para lidar com arquivos estruturados da seguinte forma, aplicando validações severas em campos vazios e valores monetários.
 
-👨‍💻 Autor Desenvolvido por Mateus Castelani.
+👨‍💻 Autor Desenvolvido por Mateus Castellani.
