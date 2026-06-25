@@ -13,7 +13,6 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String codigo;
     private String cliente;
     private String produto;
@@ -33,5 +32,19 @@ public class Pedido {
     public String getCliente() { return cliente; }
     public String getProduto() { return produto; }
     public BigDecimal getValor() { return valor; }
+
+    public void setCodigo(String codigo) {
+    }
+
+    public void setCliente(String cliente) {
+    }
+
+    public void setProduto(String produto) {
+    }
+
+    public void setValor(BigDecimal valor) {
+
+    }
+
 
 }
