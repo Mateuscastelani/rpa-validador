@@ -55,5 +55,18 @@ public class RpaController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @DeleteMapping("/pedidos/{id}")
+    public ResponseEntity<?> excluirPedido(@PathVariable Long id) {
+        return repository.findById(id)
+                .map(pedidoExistente -> {
+                    // encontra e deleta o pedido no banco
+                    repository.delete(pedidoExistente);
+
+                    // retorna o status 204
+                    return ResponseEntity.noContent().build();
+                })
+                .orElse(ResponseEntity.notFound().build());
+    }
+
 }
 
