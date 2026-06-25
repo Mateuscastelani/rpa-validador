@@ -51,7 +51,7 @@ public class RpaController {
                     // resultado embrulhado no ResponseEntity
                     return ResponseEntity.ok(pedidoAtualizado);
                 })
-                 // Se o ID não existir no banco, retorna 404 Not Found
+                    // Se o ID não existir no banco, retorna 404 Not Found
                 .orElse(ResponseEntity.notFound().build());
     }
 

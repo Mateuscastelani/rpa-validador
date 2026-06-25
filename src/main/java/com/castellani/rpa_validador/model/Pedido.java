@@ -1,7 +1,6 @@
 package com.castellani.rpa_validador.model;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.AnyDiscriminatorImplicitValues;
 
 import java.math.BigDecimal;
 
@@ -20,6 +19,7 @@ public class Pedido {
 
     public Pedido() {}
 
+
     public Pedido(String codigo, String cliente, String produto, BigDecimal valor) {
         this.codigo = codigo;
         this.cliente = cliente;
@@ -33,18 +33,12 @@ public class Pedido {
     public String getProduto() { return produto; }
     public BigDecimal getValor() { return valor; }
 
-    public void setCodigo(String codigo) {
-    }
 
-    public void setCliente(String cliente) {
-    }
-
-    public void setProduto(String produto) {
-    }
-
-    public void setValor(BigDecimal valor) {
-
-    }
+    public void setId(Long id) {this.id = id;}
+    public void setCodigo(String codigo) {this.codigo = codigo;}
+    public void setCliente(String cliente) {this.cliente = cliente;}
+    public void setProduto(String produto) { this.produto = produto;}
+    public void setValor(BigDecimal valor) {this.valor = valor;}
 
 
 }
